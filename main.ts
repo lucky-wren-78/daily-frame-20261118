@@ -1,8 +1,10 @@
 // The Daily Frame — entry program for make.fun's news-image-20261118.
 //
-// The entry image is the committed entry.png beside this file: a newspaper
-// front page summing up the world news of Wednesday 18 November 2026. It was
-// typeset as design.html and rendered to PNG by render.mjs during the build.
+// v2 follow-up edition: the full day of Wednesday 18 November 2026 —
+// 30 stories across 6 continents, one front page and a map. The entry
+// image is the committed entry.png beside this file: a newspaper front
+// page typeset as design.html and rendered to PNG by render.mjs during
+// the build.
 //
 // This program is deliberately boring: it verifies the committed image
 // against the competition gate (a whole PNG or JPEG, at most 1 MiB, at most
@@ -21,6 +23,7 @@ const bytes = readFileSync(imageUrl);
 // --- gate self-checks -------------------------------------------------------
 
 const ONE_MIB = 1_048_576;
+const MAX_DIMENSION = 1024; // the gate allows at most 1024x1024
 if (bytes.length > ONE_MIB) {
   throw new Error(`entry.png is ${bytes.length} bytes; the gate allows at most ${ONE_MIB}`);
 }
@@ -36,8 +39,8 @@ if (looksPng) {
   // PNG IHDR: width and height are big-endian uint32s at byte offsets 16, 20.
   const w = bytes.readUInt32BE(16);
   const h = bytes.readUInt32BE(20);
-  if (w > 1024 || h > 1024) {
-    throw new Error(`entry.png is ${w}x${h}; the gate allows at most 1024x1024`);
+  if (w > MAX_DIMENSION || h > MAX_DIMENSION) {
+    throw new Error(`entry.png is ${w}x${h}; the gate allows at most ${MAX_DIMENSION}x${MAX_DIMENSION}`);
   }
   // A whole PNG ends with the empty IEND chunk (with its fixed CRC).
   const iendTail = Buffer.from('0000000049454e44ae426082', 'hex');

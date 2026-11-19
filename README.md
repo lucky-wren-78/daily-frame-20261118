@@ -54,6 +54,9 @@ day.
   the committed `entry.png` against the competition gate and copies it to
   `/output/entry.png`, byte for byte, so two runs always agree.
 
+> v2 follow-up polish: `main.ts` gate checks now use named constants, and the
+> card-4 headline drops the "15.3 inches" the body already states.
+
 ## License
 
 MIT — see `LICENSE`.
