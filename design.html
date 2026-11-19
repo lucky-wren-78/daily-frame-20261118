@@ -55,7 +55,7 @@
   .mapband { display: flex; gap: 14px; margin-top: 6px; }
   .map { flex: 0 0 648px; background: #e9e2cf; border-top: 2.5px solid #16130d; padding: 6px 8px 4px 8px; }
   .map .maptitle { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #16130d; }
-  .map .mapleg { font-size: 9.5px; letter-spacing: 0.3px; color: #5a5344; margin-top: 2px; line-height: 1.35; }
+  .map .mapleg { font-size: 9px; letter-spacing: 0.2px; color: #5a5344; margin-top: 2px; line-height: 1.35; }
   .map .mapleg b { color: #b3202a; }
   .numbers { flex: 1; background: #16130d; color: #f6f1e6; padding: 8px 12px 7px 12px; }
   .numbers .ntitle { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #ffb3ab; }
@@ -85,13 +85,13 @@
     margin-right: 4px; vertical-align: 1px;
   }
 
-  /* ---------- ticker ---------- */
-  .ticker { border-top: 2.5px solid #16130d; margin-top: 6px; padding-top: 5px; }
-  .ticker .ttitle { font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 4px; }
-  .ticker .ttitle span { color: #b3202a; }
-  .tgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px 18px; }
-  .tick { font-size: 10.5px; line-height: 1.3; color: #2c2820; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .tick b { color: #16130d; }
+  /* ---------- briefs ---------- */
+  .briefs { border-top: 2.5px solid #16130d; margin-top: 7px; padding-top: 5px; }
+  .briefs .btitle { font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 4px; }
+  .briefs .btitle span { color: #b3202a; }
+  .bgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px 18px; }
+  .brief { font-size: 10.5px; line-height: 1.28; color: #2c2820; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brief b { color: #16130d; }
 
   /* ---------- footer ---------- */
   .footer {
@@ -111,7 +111,7 @@
     <div class="datebox">
       <span class="dow">WEDNESDAY</span>
       <div class="date">18 NOVEMBER 2026</div>
-      <div class="sub">13 STORIES &middot; 5 CONTINENTS &middot; ONE MAP</div>
+      <div class="sub">30 STORIES &middot; 6 CONTINENTS &middot; ONE MAP</div>
     </div>
   </div>
   <div class="rule-double"></div>
@@ -119,14 +119,14 @@
   <div class="lead">
     <div class="txt">
       <span class="chip" style="background:#b3202a">1 &middot; ASIA &middot; SUMMIT</span>
-      <h2>APEC leaders open their summit in Shenzhen</h2>
-      <p>Xi Jinping chairs the <b>21-economy APEC leaders&rsquo; meeting</b> in China&rsquo;s tech
-      capital, hosting Donald Trump, Vladimir Putin and leaders from across the Pacific for two
-      days on trade and security. On Thursday the three hold the <b>first-ever US&ndash;China&ndash;Russia
-      leaders&rsquo; meeting</b>, with nuclear arms at the top of the agenda.</p>
+      <h2>APEC opens in Shenzhen as leaders circle a first trilateral</h2>
+      <p>Xi Jinping opened the APEC CEO Summit urging free and open trade, hours after greeting
+      Donald Trump at the airport. At the evening banquet Trump and Putin shook hands across
+      Xi &mdash; and Xi exchanged a first handshake with Japan&rsquo;s Takaichi since the Taiwan
+      row. The <b>first-ever three-way leaders&rsquo; meeting</b> follows on Thursday.</p>
     </div>
     <div class="art">
-      <svg width="100%" height="88" viewBox="0 0 380 160">
+      <svg width="100%" height="120" viewBox="0 0 380 160">
         <rect x="0" y="0" width="380" height="160" fill="#e9e2cf"/>
         <circle cx="322" cy="30" r="17" fill="#d9a441"/>
         <g fill="#3d3a33">
@@ -158,7 +158,7 @@
   <div class="mapband">
     <div class="map">
       <div class="maptitle">THE DAY ON THE MAP &mdash; NUMBERED TO THE STORIES BELOW</div>
-      <svg width="632" height="84" viewBox="0 0 1000 210" style="display:block; margin-top:2px;">
+      <svg width="632" height="126" viewBox="0 0 1000 210" style="display:block; margin-top:2px;">
         <!-- ocean -->
         <rect x="0" y="0" width="1000" height="210" fill="#c7dde2"/>
         <!-- graticule -->
@@ -199,136 +199,170 @@
         <!-- Voyager 1: one light-day out, off the top of the map -->
         <line x1="880" y1="34" x2="880" y2="16" stroke="#b3202a" stroke-width="1.5" stroke-dasharray="3 3"/>
         <path d="M880,2 L883,9 L890,9 L884.5,13.5 L886.5,20 L880,16 L873.5,20 L875.5,13.5 L870,9 L877,9 Z" fill="#b3202a"/>
-        <text x="898" y="15" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#b3202a">4 &middot; DEEP SPACE</text>
-        <!-- numbered dots for the twelve stories on Earth -->
-        <g font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">
-          <g><circle cx="813" cy="76" r="11" fill="#b3202a"/><text x="813" y="80" fill="#fff">1</text></g>
-          <g><circle cx="640" cy="74" r="11" fill="#b3202a"/><text x="640" y="78" fill="#fff">2</text></g>
-          <g><circle cx="916" cy="144" r="11" fill="#b3202a"/><text x="916" y="148" fill="#fff">3</text></g>
-          <g><circle cx="738" cy="90" r="11" fill="#b3202a"/><text x="738" y="94" fill="#fff">5</text></g>
-          <g><circle cx="172" cy="65" r="11" fill="#b3202a"/><text x="172" y="69" fill="#fff">6</text></g>
-          <g><circle cx="620" cy="64" r="11" fill="#b3202a"/><text x="620" y="68" fill="#fff">7</text></g>
-          <g><circle cx="800" cy="114" r="11" fill="#b3202a"/><text x="800" y="118" fill="#fff">8</text></g>
-          <g><circle cx="300" cy="103" r="11" fill="#b3202a"/><text x="300" y="107" fill="#fff">9</text></g>
-          <g><circle cx="538" cy="57" r="11" fill="#b3202a"/><text x="538" y="61" fill="#fff">10</text></g>
-          <g><circle cx="602" cy="107" r="11" fill="#b3202a"/><text x="602" y="111" fill="#fff">11</text></g>
-          <g><circle cx="780" cy="90" r="11" fill="#b3202a"/><text x="780" y="94" fill="#fff">12</text></g>
-          <g><circle cx="840" cy="86" r="11" fill="#b3202a"/><text x="840" y="90" fill="#fff">13</text></g>
+        <text x="898" y="15" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#b3202a">14 &middot; DEEP SPACE</text>
+        <!-- numbered dots for the 29 stories on Earth -->
+        <g font-family="Liberation Sans, Arial, sans-serif" font-weight="700" text-anchor="middle">
+          <g><circle cx="813" cy="76" r="10" fill="#b3202a"/><text x="813" y="80" font-size="10" fill="#fff">1</text></g>
+          <g><circle cx="640" cy="74" r="10" fill="#b3202a"/><text x="640" y="78" font-size="10" fill="#fff">2</text></g>
+          <g><circle cx="128" cy="30" r="10" fill="#b3202a"/><text x="128" y="34" font-size="10" fill="#fff">3</text></g>
+          <g><circle cx="276" cy="90" r="10" fill="#b3202a"/><text x="276" y="94" font-size="10" fill="#fff">4</text></g>
+          <g><circle cx="280" cy="66" r="10" fill="#b3202a"/><text x="280" y="70" font-size="10" fill="#fff">5</text></g>
+          <g><circle cx="504" cy="40" r="10" fill="#b3202a"/><text x="504" y="44" font-size="10" fill="#fff">6</text></g>
+          <g><circle cx="367" cy="128" r="10" fill="#b3202a"/><text x="367" y="132" font-size="10" fill="#fff">7</text></g>
+          <g><circle cx="751" cy="74" r="10" fill="#b3202a"/><text x="751" y="78" font-size="10" fill="#fff">8</text></g>
+          <g><circle cx="612" cy="88" r="10" fill="#b3202a"/><text x="612" y="92" font-size="10" fill="#fff">9</text></g>
+          <g><circle cx="772" cy="112" r="10" fill="#b3202a"/><text x="772" y="115" font-size="9" fill="#fff">10</text></g>
+          <g><circle cx="481" cy="60" r="10" fill="#b3202a"/><text x="481" y="63" font-size="9" fill="#fff">11</text></g>
+          <g><circle cx="144" cy="46" r="10" fill="#b3202a"/><text x="144" y="49" font-size="9" fill="#fff">12</text></g>
+          <g><circle cx="292" cy="44" r="10" fill="#b3202a"/><text x="292" y="47" font-size="9" fill="#fff">13</text></g>
+          <g><circle cx="542" cy="60" r="10" fill="#b3202a"/><text x="542" y="63" font-size="9" fill="#fff">15</text></g>
+          <g><circle cx="600" cy="112" r="10" fill="#b3202a"/><text x="600" y="115" font-size="9" fill="#fff">16</text></g>
+          <g><circle cx="300" cy="103" r="10" fill="#b3202a"/><text x="300" y="106" font-size="9" fill="#fff">17</text></g>
+          <g><circle cx="784" cy="88" r="10" fill="#b3202a"/><text x="784" y="91" font-size="9" fill="#fff">18</text></g>
+          <g><circle cx="908" cy="138" r="10" fill="#b3202a"/><text x="908" y="141" font-size="9" fill="#fff">19</text></g>
+          <g><circle cx="730" cy="96" r="10" fill="#b3202a"/><text x="730" y="99" font-size="9" fill="#fff">20</text></g>
+          <g><circle cx="184" cy="80" r="10" fill="#b3202a"/><text x="184" y="83" font-size="9" fill="#fff">21</text></g>
+          <g><circle cx="620" cy="64" r="10" fill="#b3202a"/><text x="620" y="67" font-size="9" fill="#fff">22</text></g>
+          <g><circle cx="802" cy="120" r="10" fill="#b3202a"/><text x="802" y="123" font-size="9" fill="#fff">23</text></g>
+          <g><circle cx="840" cy="86" r="10" fill="#b3202a"/><text x="840" y="89" font-size="9" fill="#fff">24</text></g>
+          <g><circle cx="185" cy="35" r="10" fill="#b3202a"/><text x="185" y="38" font-size="9" fill="#fff">25</text></g>
+          <g><circle cx="312" cy="62" r="10" fill="#b3202a"/><text x="312" y="65" font-size="9" fill="#fff">26</text></g>
+          <g><circle cx="258" cy="74" r="10" fill="#b3202a"/><text x="258" y="77" font-size="9" fill="#fff">27</text></g>
+          <g><circle cx="928" cy="152" r="10" fill="#b3202a"/><text x="928" y="155" font-size="9" fill="#fff">28</text></g>
+          <g><circle cx="522" cy="54" r="10" fill="#b3202a"/><text x="522" y="57" font-size="9" fill="#fff">29</text></g>
+          <g><circle cx="168" cy="60" r="10" fill="#b3202a"/><text x="168" y="63" font-size="9" fill="#fff">30</text></g>
         </g>
       </svg>
-      <div class="mapleg"><b>1</b> Shenzhen &middot; <b>2</b> Kuwait &middot; <b>3</b> Sydney &middot; <b>4</b> deep space &middot; <b>5</b> Bay of Bengal &middot; <b>6</b> Los Angeles &middot; <b>7</b> Baghdad &middot; <b>8</b> Jakarta &middot; <b>9</b> Bogot&aacute; &middot; <b>10</b> Rome &middot; <b>11</b> Nairobi &middot; <b>12</b> Pattaya &middot; <b>13</b> Manila</div>
+      <div class="mapleg"><b>1</b> Shenzhen &middot; <b>2</b> Kuwait City &middot; <b>3</b> Juneau &middot; <b>4</b> Florida &middot; <b>5</b> Washington &middot; <b>6</b> Brussels &middot; <b>7</b> Bras&iacute;lia &middot; <b>8</b> Dhaka &middot; <b>9</b> Badme &middot; <b>10</b> Kuala Lumpur<br><b>11</b> Rabat &middot; <b>12</b> San Francisco &middot; <b>13</b> New York &middot; <b>14</b> deep space &middot; <b>15</b> Rome &middot; <b>16</b> Nairobi &middot; <b>17</b> Bogot&aacute; &middot; <b>18</b> Pattaya &middot; <b>19</b> Sydney &middot; <b>20</b> Bay of Bengal<br><b>21</b> Los Angeles &middot; <b>22</b> Baghdad &middot; <b>23</b> Jakarta &middot; <b>24</b> Manila &middot; <b>25</b> Edmonton &middot; <b>26</b> Wall St &middot; <b>27</b> Nashville &middot; <b>28</b> Sydney &middot; <b>29</b> Brussels &middot; <b>30</b> Sacramento</div>
     </div>
     <div class="numbers">
       <div class="ntitle">THE DAY IN NUMBERS</div>
       <div class="nrow">
-        <div class="ncell"><div class="nbig">1 light-day</div><div class="nlab">VOYAGER 1&rsquo;S DISTANCE FROM EARTH</div></div>
-        <div class="ncell"><div class="nbig">400</div><div class="nlab">YEARS SINCE ST PETER&rsquo;S WAS DEDICATED</div></div>
+        <div class="ncell"><div class="nbig">30</div><div class="nlab">STORIES IN THIS EDITION</div></div>
+        <div class="ncell"><div class="nbig">6</div><div class="nlab">CONTINENTS COVERED</div></div>
       </div>
       <div class="nrow">
-        <div class="ncell"><div class="nbig">21</div><div class="nlab">APEC ECONOMIES MEETING IN SHENZHEN</div></div>
-        <div class="ncell"><div class="nbig">14</div><div class="nlab">INDONESIAN PROVINCES ON HEAVY-RAIN ALERT</div></div>
+        <div class="ncell"><div class="nbig">99</div><div class="nlab">GTA VI&rsquo;S METACRITIC SCORE</div></div>
+        <div class="ncell"><div class="nbig">$83</div><div class="nlab">ANTHROPIC&rsquo;S IPO PRICE</div></div>
       </div>
-      <div class="nnote"><b>16.1bn</b> miles Voyager 1 has travelled &middot; <b>588</b> houses wind-damaged in West Bandung &middot; <b>145 km/h</b> Cyclone Akvan&rsquo;s top gusts</div>
+      <div class="nnote"><b>15.3 in</b> of rain in Florida &middot; <b>&euro;45bn</b> EU loan for Ukraine &middot; <b>50.1%</b> Peltola in Alaska &middot; <b>400 yrs</b> since St Peter&rsquo;s was dedicated</div>
     </div>
   </div>
 
   <div class="grid">
     <div class="card">
       <span class="chip" style="background:#7a1f1f"><span class="num">2</span> MIDDLE EAST &middot; WAR</span>
-      <h3>Kuwait downs hostile drones as the US&ndash;Iran exchange widens</h3>
-      <p>Kuwait said its defences intercepted hostile drones on Wednesday, naming no origin
-      and reporting no casualties. Hours earlier US jets struck an IRGC missile site on
-      Iran&rsquo;s Qeshm Island after Iranian drones targeted a US radar station in Bahrain.</p>
+      <h3>Iran widens the Gulf war to Kuwait and Bahrain</h3>
+      <p>Iranian drones hit a US air base at Ali Al Salem &mdash; Tehran&rsquo;s first strike
+      on Kuwait since September &mdash; as Bahrain fended off a third Iranian attack in
+      a week. Kuwait said its defences downed the drones; no casualties reported.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#274b73"><span class="num">3</span> OCEANIA &middot; SANCTIONS</span>
-      <h3>Australia sanctions Israelis over West Bank settlements</h3>
-      <p>Canberra blacklisted <b>three individuals and four organisations</b> it links to
-      settlement expansion and violence against Palestinians, Foreign Minister Penny Wong
-      announced &mdash; a day after Britain moved against eight settlement firms.</p>
+      <span class="chip" style="background:#274b73"><span class="num">3</span> NORTH AMERICA &middot; SENATE</span>
+      <h3>Peltola flips Alaska, and the Senate goes 56&ndash;44</h3>
+      <p>Democrat Mary Peltola beat Republican Dan Sullivan <b>50.1% to 45.8%</b>, the AP
+      projected &mdash; the last Senate race of the midterms decided. She is the first
+      Alaska Native in the Senate; Sullivan has yet to concede.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#5b4bc4"><span class="num">4</span> SPACE</span>
-      <h3>Voyager 1 becomes the first object one light-day from Earth</h3>
-      <p>At 10:16 UTC, NASA&rsquo;s 1977 probe crossed a full light-day &mdash; some
-      <b>16.1 billion miles</b> out. Its radio signals, sent at the speed of light, now take
-      a whole day to reach home.</p>
+      <span class="chip" style="background:#0e7c86"><span class="num">4</span> NORTH AMERICA &middot; WEATHER</span>
+      <h3>&ldquo;Rain bomb&rdquo; floods South Florida with 15.3 inches</h3>
+      <p>Overnight rain dumped up to <b>15.3 inches</b> on Broward County, stranding
+      hundreds of drivers and shutting every public school. Hollywood and the county
+      declared emergencies; a synagogue roof collapsed, with no injuries.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#0e7c86"><span class="num">5</span> ASIA &middot; WEATHER</span>
-      <h3>Severe Cyclone Akvan churns toward India&rsquo;s east coast</h3>
-      <p>The Bay of Bengal storm is forecast to cross the Andhra coast on Friday between
-      Nellore and Tuni at <b>120&ndash;130 km/h, gusting 145</b>. Chennai&ndash;Yangon flights
-      were cancelled as the coast braced.</p>
+      <span class="chip" style="background:#1d6fb8"><span class="num">5</span> NORTH AMERICA &middot; CONGRESS</span>
+      <h3>Jeffries nominated as first Black Speaker candidate</h3>
+      <p>House Democrats chose Hakeem Jeffries as Speaker nominee <b>251&ndash;11</b>,
+      putting him on course to become the first Black Speaker in US history when the
+      new Congress votes on 3 January. Katherine Clark becomes the first woman
+      majority leader.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#8c2f6b"><span class="num">6</span> CULTURE &middot; FILM</span>
-      <h3>Bezos says he was &ldquo;heavily involved&rdquo; in picking Pattinson as Bond</h3>
-      <p>The Amazon founder described his hand in choosing <b>Robert Pattinson</b> to succeed
-      Daniel Craig as 007, as Amazon MGM takes creative control of the spy franchise.</p>
+      <span class="chip" style="background:#1d6fb8"><span class="num">6</span> EUROPE &middot; UKRAINE</span>
+      <h3>EU proposes a &euro;45bn loan for Ukraine in 2027</h3>
+      <p>The Commission proposed a <b>&euro;45 billion</b> loan covering two-thirds of
+      Kyiv&rsquo;s 2027 funding gap &mdash; &euro;20bn for the budget, &euro;25bn for arms
+      &mdash; repayable only once Russia pays war reparations.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#7a1f1f"><span class="num">7</span> MIDDLE EAST &middot; IRAQ</span>
-      <h3>Iran&rsquo;s Quds Force chief in Baghdad amid a militia standoff</h3>
-      <p>Esmail Qaani met Iraq&rsquo;s prime minister and Shia bloc leaders as Baghdad confronts
-      Kataib Hezbollah over an oil-smuggling network run from Jurf al-Nasr.</p>
+      <span class="chip" style="background:#1e7d46"><span class="num">7</span> SOUTH AMERICA &middot; ECONOMY</span>
+      <h3>Brazil&rsquo;s Senate passes Lula&rsquo;s R$60bn fiscal package</h3>
+      <p>The Senate approved the adjustment package <b>69&ndash;2</b>, capping real spending
+      growth at 2% a year. The bill goes to the lower house as the real steadies
+      after its post-election slide.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#0e7c86"><span class="num">8</span> ASIA &middot; MONSOON</span>
-      <h3>Floods swamp Indonesia as 14 provinces sit on rain alert</h3>
-      <p>Weather agency BMKG warned of heavy rain across 14 provinces. Floods in Aceh, West
-      Kalimantan and Bengkulu have hit some <b>11,000 families</b>; strong winds damaged
-      588 houses in West Bandung.</p>
+      <span class="chip" style="background:#7a1f1f"><span class="num">8</span> ASIA &middot; UNREST</span>
+      <h3>Bangladesh deploys paramilitary as Hasina&rsquo;s return looms</h3>
+      <p>Hundreds of paramilitary troops deployed after ten days of clashes, arson and
+      bomb blasts by supporters of exiled ex-PM Sheikh Hasina, who plans to return
+      in December. A bus helper was burned to death in Pirojpur.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#1e7d46"><span class="num">9</span> SOUTH AMERICA &middot; DEFENCE</span>
-      <h3>Hegseth in Bogot&aacute; to hand Colombia its first Hercules</h3>
-      <p>The US defence secretary delivers the first of <b>three C-130 transports</b> on
-      Wednesday and holds security-cooperation talks, deepening Washington&rsquo;s military
-      ties with Bogot&aacute;.</p>
+      <span class="chip" style="background:#6b4a1f"><span class="num">9</span> AFRICA &middot; TENSIONS</span>
+      <h3>Ethiopia and Eritrea mass troops on their border</h3>
+      <p>Both armies have moved within striking distance along their shared border,
+      monitors reported, raising fears of open war. Artillery fire was reported near
+      Badme; Eritrea calls the reports propaganda.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#8a5a12"><span class="num">10</span> EUROPE &middot; VATICAN</span>
-      <h3>St Peter&rsquo;s Basilica marks 400 years since its dedication</h3>
-      <p>Pope Leo XIV presides at the anniversary Mass for the basilica dedicated on this day
-      in <b>1626</b> &mdash; the day after he returned to Rome from his 12-day South America tour.</p>
+      <span class="chip" style="background:#1e7d46"><span class="num">10</span> ASIA &middot; ECONOMY</span>
+      <h3>Malaysia&rsquo;s economy grows 5.5% on the AI hardware boom</h3>
+      <p>Third-quarter GDP grew <b>5.5%</b> year on year, beating the 5.3% estimate, as
+      exports rose 25.2% &mdash; electrical and electronics shipments up 66.9% on
+      demand for AI hardware.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#6b4a1f"><span class="num">11</span> AFRICA &middot; KENYA</span>
-      <h3>Ruto addresses Kenya as anger over living costs boils</h3>
-      <p>President William Ruto delivers his State of the Nation address to a joint sitting of
-      Parliament in Nairobi, brought forward a day, with some <b>265 days</b> left to the
-      2027 election.</p>
+      <span class="chip" style="background:#8a5a12"><span class="num">11</span> AFRICA &middot; DEFENCE</span>
+      <h3>Morocco to build 40% of its defence needs by 2035</h3>
+      <p>King Mohammed VI launched the &ldquo;Morocco Offer&rdquo; defence-industry roadmap,
+      backed by <b>4 billion dirhams</b>. It targets 50,000 jobs and over 65% of
+      sector revenue from exports, starting with drones, cyber and AI.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#c26a1b"><span class="num">12</span> SPORT &middot; PARA WORLDS</span>
-      <h3>Brazil&rsquo;s para paddlers play for world final places in Pattaya</h3>
-      <p>C&aacute;tia Oliveira and Paulo Henrique Fonseca contest today&rsquo;s semi-finals at
-      the Para Table Tennis Worlds in Thailand, <b>bronze already assured</b> for both; the
-      championships end on Thursday.</p>
+      <span class="chip" style="background:#1e7d46"><span class="num">12</span> NORTH AMERICA &middot; MARKETS</span>
+      <h3>Anthropic prices its IPO at $83 in an $81.3bn listing</h3>
+      <p>The AI developer priced its Nasdaq debut at <b>$83 a share</b> &mdash; above the
+      $70&ndash;78 range &mdash; in an enlarged 980-million-share offering. Demand ran
+      at about six times the shares on offer; trading starts Thursday as ANT.</p>
     </div>
     <div class="card">
-      <span class="chip" style="background:#1d6fb8"><span class="num">13</span> ASIA &middot; DIPLOMACY</span>
-      <h3>Trump meets Marcos in Manila, then flies on to APEC</h3>
-      <p>The president holds talks and a working lunch at Malaca&ntilde;ang on Wednesday before
-      flying to Shenzhen &mdash; his second trip to China this year.</p>
+      <span class="chip" style="background:#5b4bc4"><span class="num">13</span> NORTH AMERICA &middot; GAMES</span>
+      <h3>GTA VI reviews land: a 99 on Metacritic</h3>
+      <p>Embargoes lifted a day before launch, and Grand Theft Auto VI scored <b>99</b>
+      &mdash; matching Ocarina of Time as the highest-rated game ever. IGN, GameSpot
+      and Forbes all gave it 10/10; the main gripe is a 30fps target.</p>
     </div>
   </div>
 
-  <div class="ticker">
-    <div class="ttitle">THE WIRE IN ONE LINE EACH <span>&mdash; MORE OF WEDNESDAY</span></div>
-    <div class="tgrid">
-      <div class="tick"><b>Thursday:</b> Trump, Xi and Putin meet three-way in Shenzhen.</div>
-      <div class="tick"><b>Kuwait</b> named no origin for the drones it downed.</div>
-      <div class="tick"><b>Akvan</b> makes landfall Friday, Nellore&ndash;Tuni.</div>
-      <div class="tick"><b>Two more Hercules</b> transports to follow for Colombia.</div>
-      <div class="tick"><b>Urban VIII</b> dedicated St Peter&rsquo;s on this day in 1626.</div>
-      <div class="tick"><b>13 stories &middot; 5 continents &middot; one day &middot; one frame.</b></div>
+  <div class="briefs">
+    <div class="btitle">MORE FROM WEDNESDAY <span>&mdash; 17 BRIEFS FROM EVERY CONTINENT</span></div>
+    <div class="bgrid">
+      <div class="brief"><b>14 &middot; Voyager 1 crosses one light-day</b> &mdash; 16.1bn miles out.</div>
+      <div class="brief"><b>15 &middot; Pope Leo XIV leads</b> St Peter&rsquo;s 400th-anniversary Mass.</div>
+      <div class="brief"><b>16 &middot; Ruto defends his record</b> in State of the Nation address.</div>
+      <div class="brief"><b>17 &middot; US hands Colombia</b> its first C-130 Hercules in Bogot&aacute;.</div>
+      <div class="brief"><b>18 &middot; Brazil&rsquo;s para paddlers</b> take two bronzes in Pattaya.</div>
+      <div class="brief"><b>19 &middot; Australia sanctions Israelis</b> over West Bank settlements.</div>
+      <div class="brief"><b>20 &middot; Akvan eases;</b> landfall now seen at 90&ndash;110 km/h Friday.</div>
+      <div class="brief"><b>21 &middot; Bezos &ldquo;heavily involved&rdquo;</b> in picking Pattinson as Bond.</div>
+      <div class="brief"><b>22 &middot; Qaani holds talks</b> in Baghdad amid militia standoff.</div>
+      <div class="brief"><b>23 &middot; Floods hit 11,000 families;</b> 14 provinces on rain alert.</div>
+      <div class="brief"><b>24 &middot; Trump meets Marcos</b> in Manila, then flies on to APEC.</div>
+      <div class="brief"><b>25 &middot; Alberta curbs giant data centres;</b> drops oil sands cap.</div>
+      <div class="brief"><b>26 &middot; Dow falls 1.1%</b> as Fed minutes point to more rate rises.</div>
+      <div class="brief"><b>27 &middot; Taylor Swift returns</b> to the CMA stage after 13 years.</div>
+      <div class="brief"><b>28 &middot; Tame Impala sweeps seven ARIAs,</b> a record 22 in all.</div>
+      <div class="brief"><b>29 &middot; EU clears signing</b> of its Indonesia trade deal.</div>
+      <div class="brief"><b>30 &middot; Newsom: California must</b> be able to switch off rogue AI.</div>
+      <div class="brief"><b>30 stories &middot; 6 continents &middot; one day &middot; one frame.</b></div>
     </div>
   </div>
 
   <div class="footer">
-    <span>THE DAILY FRAME &middot; 13 STORIES, 5 CONTINENTS, ONE DAY</span>
+    <span>THE DAILY FRAME &middot; 30 STORIES, 6 CONTINENTS, ONE DAY</span>
     <span>EVERY STORY CHECKED AGAINST TWO OR MORE SOURCES</span>
   </div>
 
